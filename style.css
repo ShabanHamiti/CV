@@ -11,6 +11,11 @@ body {
   margin: 0;
   height: 100%;
 }
+@media screen and (max-width: 1023px) {
+  body {
+    height: auto;
+  }
+}
 
 .flexbox {
   display: flex;
@@ -19,8 +24,24 @@ body {
 .flexbox__row {
   flex-direction: row;
 }
+.flexbox__row__query {
+  flex-direction: row;
+}
+@media screen and (max-width: 1023px) {
+  .flexbox__row__query {
+    flex-direction: column;
+  }
+}
 .flexbox__column {
   flex-direction: column;
+}
+.flexbox__column__query {
+  flex-direction: column;
+}
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flexbox__column__query {
+    flex-direction: row;
+  }
 }
 
 h1 {
@@ -34,12 +55,23 @@ h2 {
 
 .part {
   padding-left: 2%;
+  padding-right: 2%;
 }
 .part__1 {
   width: 70%;
 }
+@media screen and (max-width: 1023px) {
+  .part__1 {
+    width: 100%;
+  }
+}
 .part__2 {
   width: 30%;
+}
+@media screen and (max-width: 1023px) {
+  .part__2 {
+    width: 100%;
+  }
 }
 
 h3 {
@@ -58,10 +90,20 @@ h3 {
 .liste__marg li {
   margin-bottom: 15px;
 }
+@media screen and (max-width: 767px) {
+  .liste__footer {
+    padding-left: 30px;
+  }
+}
 
 .composant {
   padding-top: 2%;
   margin: 0;
+}
+@media screen and (max-width: 1023px) {
+  .composant {
+    padding-bottom: 15px;
+  }
 }
 
 .element {
