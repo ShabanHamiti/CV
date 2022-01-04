@@ -1,0 +1,114 @@
+$primary-color: white;
+$secondary-color: #1e1e1e;
+$tertiary-color: crimson;
+$quaternary-color: lightgrey;
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    height: 100%;
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-around;
+    &__row{
+        flex-direction: row;
+    }
+    &__column{
+        flex-direction: column;
+    }
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+h2{
+    color: $quaternary-color;
+    margin: 0;
+}
+
+.part{
+    padding-left: 2%;
+    &__1{
+        width: 70%;
+    }
+    &__2{
+        width: 30%;
+    }
+}
+
+h3{
+    color: $tertiary-color;
+}
+
+.liste{
+    list-style: none;
+    &__padding{
+        padding-left: 1rem;
+        &__none{
+            padding: 0;
+        }
+            
+    }
+    &__marg{
+        li{
+            margin-bottom: 15px;
+        }
+    }
+}
+
+.composant{
+    padding-top: 2%;
+    margin: 0;
+}
+
+.element{
+    margin-bottom: 0;
+    margin-top: 16px;
+    
+}
+
+.margin{
+    &__none{
+        margin: 0;
+    }
+}
+
+em{
+    color: $tertiary-color;
+    font-style: normal;
+}
+
+footer{
+    background-color: $secondary-color;
+    color: $primary-color;
+}
+
+h4{
+    color: $quaternary-color;
+}
+
+.fas, .far{
+    color: $tertiary-color;
+}
+
+a{
+    text-decoration: none;
+    color: $primary-color;
+    &:focus{
+        color: $tertiary-color;
+    }
+    &:hover{
+        color: $tertiary-color;
+    }
+}
