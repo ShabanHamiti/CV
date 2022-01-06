@@ -1,0 +1,186 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    height: auto;
+  }
+}
+
+.flexbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.flexbox__row {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.flexbox__row__query {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+@media screen and (max-width: 1023px) {
+  .flexbox__row__query {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.flexbox__column {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.flexbox__column__query {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .flexbox__column__query {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+
+h1 {
+  margin-bottom: 0;
+}
+
+h2 {
+  color: lightgrey;
+  margin: 0;
+}
+
+.part {
+  padding-left: 4%;
+  padding-right: 4%;
+}
+
+.part__1 {
+  width: 70%;
+}
+
+@media screen and (max-width: 1023px) {
+  .part__1 {
+    width: 100%;
+  }
+}
+
+.part__2 {
+  width: 30%;
+}
+
+@media screen and (max-width: 1023px) {
+  .part__2 {
+    width: 100%;
+  }
+}
+
+h3 {
+  color: crimson;
+}
+
+.liste {
+  list-style: none;
+}
+
+.liste__padding {
+  padding-left: 1rem;
+}
+
+.liste__padding__none {
+  padding: 0;
+}
+
+.liste__marg li {
+  margin-bottom: 15px;
+}
+
+@media screen and (max-width: 767px) {
+  .liste__footer {
+    padding-left: 30px;
+  }
+}
+
+.composant {
+  padding-top: 2%;
+  margin: 0;
+}
+
+@media screen and (max-width: 1023px) {
+  .composant {
+    padding-bottom: 15px;
+  }
+}
+
+.element {
+  margin-bottom: 0;
+  margin-top: 16px;
+}
+
+.margin__none {
+  margin: 0;
+}
+
+em {
+  color: crimson;
+  font-style: normal;
+}
+
+footer {
+  background-color: #1e1e1e;
+  color: white;
+}
+
+h4 {
+  color: lightgrey;
+}
+
+.fas, .far {
+  color: crimson;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+a:focus {
+  color: crimson;
+}
+
+a:hover {
+  color: crimson;
+}
+/*# sourceMappingURL=style.css.map */
