@@ -3,6 +3,13 @@ $secondary-color: #1e1e1e;
 $tertiary-color: crimson;
 $quaternary-color: lightgrey;
 
+//JS, invert
+
+.invert{
+    filter: invert(1);
+}
+
+
 *{
     box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
@@ -57,6 +64,7 @@ h2{
     padding-right: 4%;
     &__1{
         width: 70%;
+        background-color: $primary-color;
         @media screen and (max-width: 1023px) {
             width: 100%;
         }
