@@ -1,6 +1,15 @@
-.invert {
+.invert__0 {
+  -webkit-filter: invert(0);
+          filter: invert(0);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.invert__1 {
   -webkit-filter: invert(1);
           filter: invert(1);
+  -webkit-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
 }
 
 * {
