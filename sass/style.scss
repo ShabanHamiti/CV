@@ -1,0 +1,158 @@
+$primary-color: white;
+$secondary-color: #1e1e1e;
+$tertiary-color: crimson;
+$quaternary-color: lightgrey;
+
+//JS, invert
+
+.invert{
+    &__0{
+        filter: invert(0);
+        transition: all 0.3s ease-out;
+    }
+    &__1{
+        filter: invert(1);
+        transition: all 0.3s ease-out;
+    }
+}
+
+
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html{
+    height: 100%;
+}
+
+body{
+    margin: 0;
+    @media screen and (max-width: 1023px) {
+        height: auto;
+    }
+}
+
+.flexbox{
+    display: flex;
+    justify-content: space-around;
+    &__row{
+        flex-direction: row;
+        &__query{
+            flex-direction: row;
+            @media screen and (max-width: 1023px) {
+                flex-direction: column;
+            }
+        }
+    }
+    &__column{
+        flex-direction: column;
+        &__query{
+            flex-direction: column;
+            @media screen and (min-width: 768px) and (max-width: 1023px) {
+                flex-direction: row;
+            }
+        }
+    }
+}
+
+h1{
+    margin-bottom: 0;
+}
+
+h2{
+    color: $quaternary-color;
+    margin: 0;
+}
+
+.part{
+    padding-left: 4%;
+    padding-right: 4%;
+    &__1{
+        width: 70%;
+        background-color: $primary-color;
+        @media screen and (max-width: 1023px) {
+            width: 100%;
+        }
+    }
+    &__2{
+        width: 30%;
+        @media screen and (max-width: 1023px) {
+            width: 100%;   
+        }
+    }
+}
+
+h3{
+    color: $tertiary-color;
+}
+
+.liste{
+    list-style: none;
+    &__padding{
+        padding-left: 1rem;
+        &__none{
+            padding: 0;
+        }
+            
+    }
+    &__marg{
+        li{
+            margin-bottom: 15px;
+        }
+    }
+    &__footer{
+        @media screen and (max-width: 767px) {
+            padding-left: 30px;
+        }
+    }
+}
+
+.composant{
+    padding-top: 2%;
+    margin: 0;
+    @media screen and (max-width: 1023px) {
+        padding-bottom: 15px;
+    }
+}
+
+.element{
+    margin-bottom: 0;
+    margin-top: 16px;
+    
+}
+
+.margin{
+    &__none{
+        margin: 0;
+    }
+}
+
+em{
+    color: $tertiary-color;
+    font-style: normal;
+}
+
+footer{
+    background-color: $secondary-color;
+    color: $primary-color;
+}
+
+h4{
+    color: $quaternary-color;
+}
+
+.fas, .far, .fab{
+    color: $tertiary-color;
+}
+
+a{
+    text-decoration: none;
+    color: $primary-color;
+    &:focus{
+        color: $tertiary-color;
+    }
+    &:hover{
+        color: $tertiary-color;
+    }
+}
